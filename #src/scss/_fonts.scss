@@ -1,0 +1,14 @@
+@import "_mixins/font-face";
+
+@include font("OpenSans", "OpenSans-Regular");
+@include font("OpenSans", "OpenSans-Bold", 700);
+@include font("OpenSans", "OpenSans-Light", 300);
+@include font("OpenSans", "OpenSans-SemiBold", 600);
+
+/* примеры подключения шрифтов 
+@include font("Kaushan Script", "KaushanScript-Regular/KaushanScript-Regular");
+@include font("Montserrat", "Montserrat-Regular/Montserrat-Regular");
+@include font("Montserrat", "Montserrat-Bold/Montserrat-Bold", bold);
+@include font("Roboto", "fonts/Roboto-Regular/Roboto-Regular");
+@include font("Roboto", "fonts/Roboto-LightItalic/Roboto-LightItalic", 300, italic);
+*/
