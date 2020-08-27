@@ -2,3 +2,146 @@
 @import "fonts";
 
 @import "global";
+
+.header {
+  padding: 50px 0 140px 0;
+  background-color: $accent-color;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    margin-right: 130px;
+  }
+
+  &__button {
+    display: inline-block;
+    margin-left: auto;
+    padding: 12px 35px;
+
+    font-size: 14px;
+    line-height: 14px;
+    color: $light-text;
+    text-decoration: none;
+
+    border: 1px solid $light-text;
+    border-radius: 1px;
+
+    &:hover {
+      color: $accent-color;
+      background-color: $light-text;
+    }
+  }
+}
+
+.site-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    //margin: 0 30px 0 30px;
+    padding: 30px;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 14px;
+    color: $light-text;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.header-slider {
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+
+  list-style: none;
+
+  &__item {
+    padding-top: 125px;
+    padding-left: 98px;
+    padding-bottom: 160px;
+
+    background-color: black;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: bold;
+    color: $light-text;
+  }
+
+  &__description {
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $light-text;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 12px 45px;
+
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    color: $accent-color;
+    text-decoration: none;
+
+    background-color: $light-text;
+  }
+
+  .slick-arrow {
+    .slick-prev {
+      font-size: 0;
+    }
+
+    .slick-next {
+      font-size: 0;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+
+    li button {
+      font-size: 0;
+      width: 15px;
+      height: 15px;
+      margin: 0 10px;
+
+      border-radius: 50%;
+      border: none;
+      overflow: hidden;
+      background-color: #e3e3e3;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    li.slick-active button {
+      width: 19px;
+      height: 19px;
+      background-color: #ffffff;
+    }
+  }
+}
