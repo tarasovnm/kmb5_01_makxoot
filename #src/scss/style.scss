@@ -4,7 +4,7 @@
 @import "global";
 
 .header {
-  padding: 50px 0 140px 0;
+  padding: 50px 0 5px 0;
   background-color: $accent-color;
 }
 
@@ -71,7 +71,10 @@
     padding-left: 98px;
     padding-bottom: 160px;
 
-    background-color: black;
+    background-image: url("../img/servers.png"),
+      radial-gradient(circle at 900px 180px, rgba(255, 255, 255, 0.75), transparent 180px);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50px;
   }
 
   &__title {
@@ -118,7 +121,7 @@
   .slick-dots {
     display: flex;
     list-style: none;
-    margin: 0;
+    margin: 50px 0;
     padding: 0;
     justify-content: center;
 
@@ -143,5 +146,104 @@
       height: 19px;
       background-color: #ffffff;
     }
+  }
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: bold;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.ratings {
+  padding-top: 95px;
+  padding-bottom: 80px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item:first-child img {
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 77px;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1;
+      //border: 1px solid black;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.plans {
+  padding-top: 95px;
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+
+    border: 1px solid #d0cece;
+  }
+
+  &__item {
+    width: 25%;
+    text-align: center;
+  }
+
+  &__item-category {
+  }
+
+  &__item-title {
+  }
+
+  &__ssd {
+  }
+
+  &__cites {
+  }
+
+  &__databases {
+  }
+
+  &__load {
+  }
+
+  &__price {
   }
 }
