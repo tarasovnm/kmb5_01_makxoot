@@ -439,12 +439,12 @@
 
     .slick-prev {
       background-image: url("../img/arrow-prev.png");
-      left: -120px;
+      left: -107px;
     }
 
     .slick-next {
       background-image: url("../img/arrow-next.png");
-      right: -83px;
+      right: -70px;
     }
   }
 }
@@ -503,5 +503,128 @@
     line-height: 24px;
     font-weight: normal;
     color: #5f5f5f;
+  }
+}
+
+.present {
+  padding-bottom: 185px;
+
+  &__title {
+    position: relative;
+    padding-top: 95px;
+    margin-bottom: 25px;
+
+    &::before {
+      content: "";
+      width: 65px;
+      height: 65px;
+      position: absolute;
+      top: 0;
+      right: 50%;
+      margin-right: -32px;
+
+      background-image: url("../img/surprise-icon.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__description {
+    max-width: 615px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: normal;
+    color: $dark-text;
+    text-align: center;
+  }
+
+  &__button {
+    margin: 0 auto;
+    padding: 15px 0;
+    display: block;
+    width: 190px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: $light-text;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+
+    &:hover {
+      color: $accent-color;
+      background-color: $light-text;
+    }
+  }
+}
+
+.footer {
+  padding-top: 85px;
+  padding-bottom: 85px;
+  background-color: $accent-color;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__social {
+    margin-right: auto;
+  }
+
+  &__social-list {
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 94px;
+  }
+
+  &__social-link {
+    display: block;
+    width: 23px;
+    height: 23px;
+
+    background-image: url("../img/vk-icon.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    &--fb {
+      background-image: url("../img/facebook-icon.png");
+    }
+
+    &--twitter {
+      background-image: url("../img/twitter-icon.png");
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: $light-text;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item-link {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    color: $light-text;
+    text-decoration: none;
+    opacity: 0.7;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
