@@ -6,4 +6,11 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2000,
   });
+
+  $(".reviews__slider").slick({
+    infinite: true,
+    slidesToShow: 2,
+    arrows: true,
+    adaptiveHeight: true,
+  });
 });

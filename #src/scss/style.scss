@@ -108,16 +108,6 @@
     background-color: $light-text;
   }
 
-  .slick-arrow {
-    .slick-prev {
-      font-size: 0;
-    }
-
-    .slick-next {
-      font-size: 0;
-    }
-  }
-
   .slick-dots {
     display: flex;
     list-style: none;
@@ -203,12 +193,18 @@
 
 .plans {
   padding-top: 95px;
+  padding-bottom: 100px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
 
   &__tabs {
     display: flex;
     justify-content: space-between;
     max-width: 420px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   &__list {
@@ -221,29 +217,291 @@
     border: 1px solid #d0cece;
   }
 
+  &__tab {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 0;
+    width: 190px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: $gray-text;
+    text-decoration: none;
+    text-align: center;
+
+    &--selected {
+      color: #0ea7eb;
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+    }
+  }
+
   &__item {
     width: 25%;
     text-align: center;
   }
 
   &__item-category {
+    margin: 0;
+    padding: 24px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray-text;
   }
 
   &__item-title {
+    margin: 0;
+    padding: 35px 0 15px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: $dark-text;
   }
 
   &__ssd {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray-text;
   }
 
-  &__cites {
+  &__sites {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray-text;
+
+    background-color: #f6f6f6;
   }
 
   &__databases {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray-text;
   }
 
   &__load {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray-text;
+
+    background-color: #f6f6f6;
   }
 
   &__price {
+    margin: 0;
+    padding: 35px 0;
+    font-size: 34px;
+    font-weight: bold;
+    color: #01e35a;
+
+    span {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: "₽";
+        bottom: 6px;
+        right: -15px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #01e35a;
+      }
+    }
+  }
+
+  &__item:hover {
+    box-shadow: 0 0 49px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+
+    .plans__item-category {
+      color: $light-text;
+      background-color: #30aeec;
+    }
+
+    .plans__item-title {
+      color: #30aeec;
+    }
+  }
+}
+
+.advantages {
+  &__title {
+    margin-bottom: 90px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 105px;
+    margin-bottom: 70px;
+    width: 360px;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 85px;
+      height: 85px;
+      top: 0;
+      left: 138px;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(1)::before {
+      background-image: url("../img/adv-first.png");
+    }
+
+    &:nth-child(2)::before {
+      background-image: url("../img/adv-second.png");
+    }
+
+    &:nth-child(3)::before {
+      background-image: url("../img/adv-third.png");
+    }
+
+    &:nth-child(4)::before {
+      background-image: url("../img/adv-fourth.png");
+    }
+
+    &:nth-child(5)::before {
+      background-image: url("../img/adv-fivth.png");
+    }
+
+    &:nth-child(6)::before {
+      background-image: url("../img/adv-sixth.png");
+    }
+  }
+
+  &__item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: $dark-text;
+  }
+
+  &__description {
+    padding: 0 55px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    color: $dark-text;
+  }
+}
+
+.find-domain {
+  padding-top: 95px;
+  padding-bottom: 100px;
+  background-color: #f5f5f5;
+}
+
+.reviews {
+  padding: 180px 0;
+
+  &__title {
+    margin-bottom: 90px;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .slick-arrow {
+      position: absolute;
+      top: 157px;
+      font-size: 0;
+      width: 37px;
+      height: 30px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .slick-prev {
+      background-image: url("../img/arrow-prev.png");
+      left: -120px;
+    }
+
+    .slick-next {
+      background-image: url("../img/arrow-next.png");
+      right: -83px;
+    }
+  }
+}
+
+.slider-item {
+  position: relative;
+  padding: 47px 47px 50px 47px;
+  max-width: 520px;
+  min-height: 323px;
+  border: 1px solid #e7e6e6;
+  border-radius: 1px;
+
+  &:hover {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+  }
+
+  &__user {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__name-and-prof {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 24px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $dark-text;
+  }
+
+  &__prof {
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: $dark-text;
+  }
+
+  &__review {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    color: $dark-text;
+  }
+
+  &__date {
+    position: absolute;
+    left: 47px;
+    bottom: 18px;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #5f5f5f;
   }
 }

@@ -106,7 +106,7 @@
       <h2 class="plans__title section-title">Выберите тариф</h2>
 
       <div class="plans__tabs">
-        <a class="plans__tab" href="#">Оплата за год</a>
+        <a class="plans__tab plans__tab--selected" href="#">Оплата за год</a>
         <a class="plans__tab" href="#">Оплата за месяц</a>
       </div>
 
@@ -118,7 +118,7 @@
           <p class="plans__sites">1 сайт</p>
           <p class="plans__databases">1 база данных</p>
           <p class="plans__load">Нагрузка 12.5%</p>
-          <p class="plans__price">113</p>
+          <p class="plans__price"><span>113</span></p>
         </li>
 
         <li class="plans__item">
@@ -128,7 +128,7 @@
           <p class="plans__sites">5 сайтов</p>
           <p class="plans__databases">5 баз данных</p>
           <p class="plans__load">Нагрузка 5%</p>
-          <p class="plans__price">219</p>
+          <p class="plans__price"><span>219</span></p>
         </li>
 
         <li class="plans__item">
@@ -138,7 +138,7 @@
           <p class="plans__sites">15 сайтов</p>
           <p class="plans__databases">15 баз данных</p>
           <p class="plans__load">Нагрузка 25%</p>
-          <p class="plans__price">349</p>
+          <p class="plans__price"><span>349</span></p>
         </li>
 
         <li class="plans__item">
@@ -148,64 +148,66 @@
           <p class="plans__sites">40 сайтов</p>
           <p class="plans__databases">40 баз данных</p>
           <p class="plans__load">Нагрузка 50%</p>
-          <p class="plans__price">615</p>
+          <p class="plans__price"><span>615</span></p>
         </li>
       </ul>
 
     </section>
 
     <section class="advantages">
-      <h2 class="advantages__title section-title">Наши преимущества</h2>
+      <div class="container">
+        <h2 class="advantages__title section-title">Наши преимущества</h2>
 
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__title">Безопасность данных</h3>
-          <p class="advantages__description">
-            Операцинная система CloudLinux
-            с CageFS отлично защищает данные
-            клиентов макхоота
-          </p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Премиальное оборудование</h3>
-          <p class="advantages__description">
-            Клиенты макхоота обслуживаются на
-            профессиональном оборудовании
-            фирмы Dell с SSD-дисками
-          </p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Круглосуточная поддержка</h3>
-          <p class="advantages__description">
-            Лучшие специалисты Макхоота
-            доступны в режиме 24/7 для решения
-            любых вопросов
-          </p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Перенос на наш хостинг</h3>
-          <p class="advantages__description">
-            При переходе от другого хостера
-            Макхост бесплатно переносит сайты и
-            дарит месяц пользования в подарок
-          </p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Своя хостинг-панель</h3>
-          <p class="advantages__description">
-            Мы используем панель собственной
-            разработки для максимального продуманного и
-            удобного управления сайтами
-          </p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Акции и бонусы</h3>
-          <p class="advantages__description">
-            Все наши пользователи регулярно
-            получают бонусы и участвуют в акциях
-          </p>
-        </li>
-      </ul>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Безопасность данных</h3>
+            <p class="advantages__description">
+              Операцинная система CloudLinux
+              с CageFS отлично защищает данные
+              клиентов макхоота
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Премиальное оборудование</h3>
+            <p class="advantages__description">
+              Клиенты макхоота обслуживаются на
+              профессиональном оборудовании
+              фирмы Dell с SSD-дисками
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Круглосуточная поддержка</h3>
+            <p class="advantages__description">
+              Лучшие специалисты Макхоота
+              доступны в режиме 24/7 для решения
+              любых вопросов
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Перенос на наш хостинг</h3>
+            <p class="advantages__description">
+              При переходе от другого хостера
+              Макхост бесплатно переносит сайты и
+              дарит месяц пользования в подарок
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Своя хостинг-панель</h3>
+            <p class="advantages__description">
+              Мы используем панель собственной
+              разработки для максимального продуманного и
+              удобного управления сайтами
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Акции и бонусы</h3>
+            <p class="advantages__description">
+              Все наши пользователи регулярно
+              получают бонусы и участвуют в акциях
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="find-domain">
@@ -218,74 +220,142 @@
     </section>
 
     <section class="reviews">
-      <h2 class="reviews__title section-title">Клиенты про нас</h2>
-      <ul class="reviews__slider">
-        <li class="reviews__item slider-item">
-          <div class="slider-item__user">
+      <div class="container">
+        <h2 class="reviews__title section-title">Клиенты про нас</h2>
+        <ul class="reviews__slider">
+          <li class="reviews__item slider-item">
+            <div class="slider-item__user">
 
-            <div class="slider-item__photo">
-              <img class="slider-item__image" src="img/slider_img-man.png">
+              <div class="slider-item__photo">
+                <img class="slider-item__image" src="img/slider_img-man.png">
+              </div>
+
+              <div class="slider-item__name-and-prof">
+                <h3 class="slider-item__name">Алексей Кашин</h3>
+                <p class="slider-item__prof">YouTube-блогер</p>
+              </div>
+
+              <div class="slider-item__rating">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
 
-            <div class="slider-item__name-and-prof">
-              <h3 class="slider-item__name">Алексей Кашин</h3>
-              <p class="slider-item__prof">YouTube-блогер</p>
+            <div class="slider-item__review">
+              С Макхоотом работаю около 7 месяцев. Общие
+              впечатления отличные! Сайты летают, техподдержка
+              оперативно решает все вопросы. Есть тестовый период
+              целых 93 дня! Это ли не сказка ?! Особенно хочу отметить
+              менеджера Ивана Иванова за грамотную помощь
+              в решении вопросов сотрудничества. Макхооту спасибо
+              за работу!
             </div>
 
-            <div class="slider-item__rating">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
+            <time class="slider-item__date">13 апр. 2019</time>
+          </li>
 
-          <div class="slider-item__reivew">
-            С Макхоотом работаю около 7 месяцев. Общие
-            впечатления отличные! Сайты летают, техподдержка
-            оперативно решает все вопросы. Есть тестовый период
-            целых 93 дня! Это ли не сказка ?! Особенно хочу отметить
-            менеджера Ивана Иванова за грамотную помощь
-            в решении вопросов сотрудничества. Макхооту спасибо
-            за работу!
-          </div>
+          <li class="reviews__item slider-item">
+            <div class="slider-item__user">
 
-          <time class="slider-item__date">13 апр. 2019</time>
-        </li>
+              <div class="slider-item__photo">
+                <img class="slider-item__image" src="img/slider_img-woman.png">
+              </div>
 
-        <li class="reviews__item slider-item">
-          <div class="slider-item__user">
+              <div class="slider-item__name-and-prof">
+                <h3 class="slider-item__name">Татьяна Велина</h3>
+                <p class="slider-item__prof">SMM-менеджер</p>
+              </div>
 
-            <div class="slider-item__photo">
-              <img class="slider-item__image" src="img/slider_img-woman.png">
+              <div class="slider-item__rating">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
 
-            <div class="slider-item__name-and-prof">
-              <h3 class="slider-item__name">Татьяна Велина</h3>
-              <p class="slider-item__prof">SMM-менеджер</p>
+            <div class="slider-item__review">
+              Это был мой первый опыт, однако я в восторге! Мне, как нубу
+              всё это было интуитивно понятно. Когда возникали вопросы,
+              мне отвечали в течение двух минут. Служба поддержки очень
+              отзывчивая и понимающая.
+              Сервис на высоте!
             </div>
 
-            <div class="slider-item__rating">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+            <time class="slider-item__date">27 мая. 2019</time>
+          </li>
+
+          <li class="reviews__item slider-item">
+            <div class="slider-item__user">
+
+              <div class="slider-item__photo">
+                <img class="slider-item__image" src="img/slider_img-man.png">
+              </div>
+
+              <div class="slider-item__name-and-prof">
+                <h3 class="slider-item__name">Алексей Кашин</h3>
+                <p class="slider-item__prof">YouTube-блогер</p>
+              </div>
+
+              <div class="slider-item__rating">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
-          </div>
 
-          <div class="slider-item__reivew">
-            Это был мой первый опыт, однако я в восторге! Мне, как нубу
-            всё это было интуитивно понятно. Когда возникали вопросы,
-            мне отвечали в течение двух минут. Служба поддержки очень
-            отзывчивая и понимающая.
-            Сервис на высоте!
-          </div>
+            <div class="slider-item__review">
+              С Макхоотом работаю около 7 месяцев. Общие
+              впечатления отличные! Сайты летают, техподдержка
+              оперативно решает все вопросы. Есть тестовый период
+              целых 93 дня! Это ли не сказка ?! Особенно хочу отметить
+              менеджера Ивана Иванова за грамотную помощь
+              в решении вопросов сотрудничества. Макхооту спасибо
+              за работу!
+            </div>
 
-          <time class="slider-item__date">27 мая. 2019</time>
-        </li>
-      </ul>
+            <time class="slider-item__date">13 апр. 2019</time>
+          </li>
+
+          <li class="reviews__item slider-item">
+            <div class="slider-item__user">
+
+              <div class="slider-item__photo">
+                <img class="slider-item__image" src="img/slider_img-woman.png">
+              </div>
+
+              <div class="slider-item__name-and-prof">
+                <h3 class="slider-item__name">Татьяна Велина</h3>
+                <p class="slider-item__prof">SMM-менеджер</p>
+              </div>
+
+              <div class="slider-item__rating">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div class="slider-item__review">
+              Это был мой первый опыт, однако я в восторге! Мне, как нубу
+              всё это было интуитивно понятно. Когда возникали вопросы,
+              мне отвечали в течение двух минут. Служба поддержки очень
+              отзывчивая и понимающая.
+              Сервис на высоте!
+            </div>
+
+            <time class="slider-item__date">27 мая. 2019</time>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="present">
