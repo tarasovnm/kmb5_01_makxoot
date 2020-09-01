@@ -214,7 +214,14 @@
       <h2 class="find-domain__title section-title">Найдите идеальное доменное имя</h2>
 
       <form class="search-form">
-
+        <input class="search-form__domain" type="text" name="domain" id="domain"
+          placeholder="Введите нужное доменое имя">
+        <select class="search-form__zone" name="domain-zone" id="domain-zone" form="search-form">
+          <option value="ru">.ru</option>
+          <option value="ru">.com</option>
+          <option value="ru">.net </option>
+        </select>
+        <button class="search-form__submit" type="submit">Найти</button>
       </form>
 
     </section>
