@@ -20,10 +20,11 @@
   &__button {
     display: inline-block;
     margin-left: auto;
-    padding: 12px 35px;
+    padding: 11px 32px;
 
     font-size: 14px;
     line-height: 14px;
+    letter-spacing: 0.5px;
     color: $light-text;
     text-decoration: none;
 
@@ -51,6 +52,7 @@
   &__link {
     font-size: 14px;
     line-height: 14px;
+    letter-spacing: 0.5px;
     color: $light-text;
     text-decoration: none;
 
@@ -70,12 +72,12 @@
   &__item {
     padding-top: 125px;
     padding-left: 98px;
-    padding-bottom: 160px;
+    padding-bottom: 165px;
 
     background-image: url("../img/servers.png"),
       radial-gradient(circle at 900px 180px, rgba(255, 255, 255, 0.75), transparent 180px);
     background-repeat: no-repeat, no-repeat;
-    background-position: right 50px;
+    background-position: 700px 60px;
   }
 
   &__title {
@@ -84,6 +86,7 @@
     padding: 0;
     font-size: 46px;
     line-height: 56px;
+    letter-spacing: 1px;
     font-weight: bold;
     color: $light-text;
   }
@@ -94,11 +97,12 @@
     line-height: 24px;
     font-weight: 300;
     color: $light-text;
+    letter-spacing: 0.7px;
   }
 
   &__button {
     display: inline-block;
-    padding: 12px 45px;
+    padding: 11px 45px;
 
     font-size: 14px;
     line-height: 14px;
@@ -119,7 +123,7 @@
   .slick-dots {
     display: flex;
     list-style: none;
-    margin: 50px 0;
+    margin: 52px 0;
     padding: 0;
     justify-content: center;
 
@@ -152,17 +156,18 @@
   line-height: 48px;
   font-weight: bold;
   text-align: center;
+  letter-spacing: 1px;
 
   margin: 0;
   padding: 0;
 }
 
 .ratings {
-  padding-top: 95px;
-  padding-bottom: 80px;
+  padding-top: 90px;
+  padding-bottom: 75px;
 
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
 
   &__list {
@@ -210,9 +215,9 @@
   &__tabs {
     display: flex;
     justify-content: space-between;
-    max-width: 420px;
+    max-width: 380px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   &__list {
@@ -227,7 +232,7 @@
 
   &__tab {
     display: inline-block;
-    padding: 15px 0;
+    padding: 13px 0;
     margin: 0;
     width: 190px;
 
@@ -250,15 +255,15 @@
 
   &__item-category {
     margin: 0;
-    padding: 24px 0;
+    padding: 22px 0;
     font-size: 16px;
     font-weight: 600;
-    color: $gray-text;
+    color: #cccccc;
   }
 
   &__item-title {
     margin: 0;
-    padding: 35px 0 15px 0;
+    padding: 39px 0 15px 0;
     font-size: 30px;
     font-weight: bold;
     color: $dark-text;
@@ -302,7 +307,8 @@
 
   &__price {
     margin: 0;
-    padding: 35px 0;
+    padding: 30px 0;
+    padding-right: 20px;
     font-size: 34px;
     font-weight: bold;
     color: #01e35a;
@@ -338,6 +344,9 @@
 }
 
 .advantages {
+  padding-top: 93px;
+  padding-bottom: 86px;
+
   &__title {
     margin-bottom: 90px;
   }
@@ -354,7 +363,7 @@
   &__item {
     position: relative;
     padding-top: 105px;
-    margin-bottom: 70px;
+    margin-bottom: 67px;
     width: 360px;
     text-align: center;
 
@@ -394,9 +403,13 @@
   }
 
   &__item-title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
     font-size: 18px;
     font-weight: bold;
     color: $dark-text;
+    letter-spacing: 0.45px;
   }
 
   &__description {
@@ -406,12 +419,13 @@
     line-height: 24px;
     font-weight: normal;
     color: $dark-text;
+    letter-spacing: 0.3px;
   }
 }
 
 .find-domain {
-  padding-top: 95px;
-  padding-bottom: 100px;
+  padding-top: 91px;
+  padding-bottom: 101px;
   background-color: #f5f5f5;
 
   background-image: url("../img/domen_left-img.png"), url("../img/domen_right-img.png");
@@ -419,13 +433,13 @@
   background-position: left -50px, right -190px;
 
   &__title {
-    margin-bottom: 55px;
+    margin-bottom: 53px;
   }
 }
 
 .search-form {
   position: relative;
-  max-width: 780px;
+  max-width: 790px;
   margin: 0 auto;
   display: flex;
 
@@ -445,7 +459,7 @@
     position: relative;
     flex-grow: 1;
     margin: 0;
-    padding: 15px 25px;
+    padding: 14px 25px;
     border: none;
 
     font-size: 13px;
@@ -457,7 +471,7 @@
     position: relative;
     width: 120px;
     margin: 0;
-    padding: 15px 15px;
+    padding: 14px 15px;
 
     font-size: 16px;
     font-weight: bold;
@@ -478,7 +492,7 @@
   &__submit {
     position: relative;
     margin: 0;
-    padding: 15px 0 15px 22px;
+    padding: 14px 0 14px 30px;
     width: 176px;
 
     font-size: 16px;
@@ -493,7 +507,7 @@
     &::after {
       position: absolute;
       content: url("../img/seacrh.png");
-      top: 20px;
+      top: 18px;
       left: 48px;
       width: 17px;
       height: 18px;
@@ -502,16 +516,21 @@
 }
 
 .reviews {
-  padding: 180px 0;
+  padding-top: 176px;
+  padding-bottom: 182px;
+
+  &__inner {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 
   &__title {
-    margin-bottom: 90px;
+    margin-bottom: 98px;
   }
 
   &__slider {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -543,11 +562,13 @@
   }
 }
 
+//https://codepen.io/Rapt0p7/pen/rrBypN
+
 .slider-item {
   position: relative;
-  padding: 47px 47px 50px 47px;
-  max-width: 520px;
-  min-height: 323px;
+  padding: 47px 95px 50px 47px;
+  width: 620px;
+  min-height: 345px;
   border: 1px solid #e7e6e6;
   border-radius: 1px;
 
@@ -557,7 +578,7 @@
 
   &__user {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   &__name-and-prof {
@@ -569,7 +590,7 @@
 
   &__name {
     margin: 0;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     font-size: 14px;
     font-weight: 600;
     color: $dark-text;
@@ -601,11 +622,11 @@
 }
 
 .present {
-  padding-bottom: 185px;
+  padding-bottom: 187px;
 
   &__title {
     position: relative;
-    padding-top: 95px;
+    padding-top: 97px;
     margin-bottom: 25px;
 
     &::before {
@@ -625,7 +646,7 @@
   &__description {
     max-width: 615px;
     margin: 0 auto;
-    margin-bottom: 38px;
+    margin-bottom: 34px;
 
     font-size: 15px;
     line-height: 25px;
@@ -636,7 +657,7 @@
 
   &__button {
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 12px 0;
     display: block;
     width: 190px;
 
@@ -659,7 +680,7 @@
 }
 
 .footer {
-  padding-top: 85px;
+  padding-top: 86px;
   padding-bottom: 85px;
   background-color: $accent-color;
 
@@ -673,7 +694,7 @@
 
   &__social-list {
     margin: 0;
-    margin-top: 40px;
+    margin-top: 35px;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -700,6 +721,7 @@
   }
 
   &__title {
+    margin-top: 19px;
     font-size: 16px;
     font-weight: 600;
     color: $light-text;
@@ -722,5 +744,13 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  &__clients {
+    margin-right: 100px;
+  }
+
+  &__services {
+    margin-right: 87px;
   }
 }
